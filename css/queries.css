@@ -1,0 +1,341 @@
+/* ************ */
+/* below 1344px (smaller desktops*/
+/* ************ */
+@media (max-width: 84em) {
+  .about {
+    margin-top: -4rem;
+  }
+  .about-me-photo {
+    height: 27rem;
+  }
+  .info-left {
+    height: 24rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .header {
+    padding: 1.6rem;
+  }
+  .about-me-container {
+    padding: 19.2rem 1.6rem 6.4rem 1.6rem;
+  }
+  .width-medium {
+    width: 80%;
+  }
+  .header-container {
+    margin-bottom: 3.2rem;
+    margin-top: 3.2rem;
+  }
+  .portfolio-title {
+    font-size: 7.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 1120px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 70em) {
+  .width-medium {
+    width: 80%;
+  }
+  .about-me-photo {
+    height: 25rem;
+  }
+  .info-left {
+    height: 22rem;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/**************************/
+/* BELOW 1024px (Tablets) */
+/**************************/
+
+@media (max-width: 64em) {
+  .about-me-photo {
+    height: 23rem;
+  }
+  .info-left {
+    height: 20rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .about__text {
+    padding: 3.2rem;
+  }
+  .width-medium {
+    width: 90%;
+  }
+
+  .about-me-container {
+    padding: 20rem 6.4rem 6.4rem 6.4rem;
+  }
+  .about-me-photo {
+    height: 21rem;
+  }
+  .info-left {
+    height: 20rem;
+  }
+}
+/**************************/
+/* BELOW 800px (Tablets) */
+/**************************/
+
+@media (max-width: 50em) {
+  .about-me-container {
+    padding: 30rem 6.4rem 6.4rem 6.4rem;
+  }
+  .btn-holder {
+    justify-content: center;
+  }
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.6rem;
+  }
+
+  .grid-1col-2cols {
+    grid-template-columns: 1fr;
+  }
+  .info-left {
+    height: 26rem;
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 3.2rem;
+  }
+  .about-me-photo {
+    position: relative;
+    height: 32rem;
+    top: -3.2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0.8rem;
+  }
+  .info-right {
+    position: relative;
+    text-align: center;
+  }
+  .vertical-align {
+    position: relative;
+    top: 0;
+    transform: translate(0, 0);
+    padding: 2.4rem;
+  }
+  .info-right-text {
+    text-align: center;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .about {
+    padding: 1.6rem;
+  }
+  .grid-5-cols,
+  .grid-4-cols,
+  .grid-3-cols,
+  .grid-2-cols,
+  .grid-2cols-1col,
+  .grid-1col-2cols {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio {
+    padding: 1.6rem;
+  }
+  .nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about-me-container {
+    padding: 33rem 6.4rem 6.4rem 6.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .about-me-container {
+    padding: 22rem 2.4rem 6.4rem 2.4rem;
+  }
+  .header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero {
+    height: 85vh;
+  }
+  .hero__position {
+    letter-spacing: 0.2rem;
+  }
+
+  .my-design:hover {
+    transform: scale(1.1);
+  }
+  .logo {
+    margin-bottom: 0;
+    margin-top: 1.6rem;
+  }
+
+  .about {
+    padding: 6.4rem 1.6rem;
+  }
+
+  .logo {
+    margin-bottom: 1.6rem;
+  }
+  .hero__title {
+    font-size: 3.2rem;
+  }
+  .portfolio-title {
+    font-size: 4.8rem;
+    padding: 1.2rem;
+  }
+
+  /* mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* allows No transitins at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-item-link:link,
+  .nav-item-link:visited {
+    background-color: hsla(192, 100%, 32%, 0.8);
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    align-items: center;
+  }
+  .nav-item-link:link,
+  .nav-item-link:visited {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  .header-container {
+    font-size: 2.4rem;
+  }
+  .grid-2-cols-about {
+    grid-template-columns: 1fr;
+  }
+  .logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/**************************/
+/* BELOW 464px (Phones) */
+/**************************/
+
+@media (max-width: 29em) {
+  .about-me-photo {
+    height: 28rem;
+  }
+  .info-left {
+    height: 24rem;
+    margin-bottom: 0;
+  }
+}
+
+/**************************/
+/* BELOW 420px (Phones) */
+/**************************/
+
+@media (max-width: 26.25em) {
+  .about__text::after {
+    top: 2rem;
+    right: -20rem;
+  }
+  .vertical-align {
+    padding: 3.2rem 6.4rem 3.2rem 6.4rem;
+  }
+  .about-me-photo {
+    height: 24rem;
+  }
+  .info-left {
+    height: 20rem;
+  }
+}
+
+/**************************/
+/* BELOW 368px (Phones) */
+/**************************/
+
+@media (max-width: 23em) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+    width: 10rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .portfolio-title {
+    font-size: 3.2rem;
+  }
+  .contact {
+    padding: 0.4rem;
+  }
+  .about-me-photo {
+    height: 22rem;
+  }
+  .info-left {
+    height: 18rem;
+  }
+}

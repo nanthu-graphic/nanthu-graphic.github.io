@@ -1,0 +1,87 @@
+/* 
+#0082a3
+
+*/
+
+.grid-5-cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-2cols-1col {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid-1col-2cols {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-5-cols,
+.grid-4-cols,
+.grid-3-cols,
+.grid-2-cols,
+.grid-2cols-1col,
+.grid-1col-2cols {
+  max-width: 100vw;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.8rem;
+  padding: 6.4rem;
+}
+
+.background {
+  background-color: #f1eeee;
+}
+
+.black-bg {
+  background-color: #000;
+}
+
+.background-transparent {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.border-radius {
+  border-radius: 0.8rem;
+}
+
+.box-shadow {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+.padding-top-large {
+  padding-top: 10rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-gap {
+  gap: 0;
+}
+
+.width-medium {
+  width: 80%;
+}
